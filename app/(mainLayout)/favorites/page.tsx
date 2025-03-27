@@ -50,6 +50,7 @@ export default async function FavoritesPage() {
 
   return (
     <div className="grid grid-cols-1 mt-5 gap-4">
+      {/* eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any */}
       {data.map((favorite) => (
         <JobCard key={favorite.JobPost.id} job={favorite.JobPost} />
       ))}
