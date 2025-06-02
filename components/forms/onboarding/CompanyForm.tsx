@@ -185,7 +185,7 @@ export function CompanyForm() {
                       variant={"destructive"}
                       size="icon"
                       className="absolute -top-2 -right-2"
-                      onClick={() => field.onChange("")} //remove the selected saved image from the form state // TODO: Later i can delete image stored on my storage whenever the user cancels an image upload.
+                      onClick={() => field.onChange("")} // remove the selected saved image from the form state // TODO: Later i can delete image stored on my storage whenever the user cancels an image upload.
                     >
                       <XIcon className="size-4" />
                     </Button>

@@ -35,7 +35,9 @@ export function UserDropdown({ email, image, name }: IAppProps) {
       <DropdownMenuContent align="end" className="w-48">
         <DropdownMenuLabel className="flex flex-col">
           <span className="text-sm font-medium text-foreground">{name}</span>
-          <span className="text-xs text-muted-foreground">{email}</span>
+          <span className="text-xs text-muted-foreground truncate">
+            {email}
+          </span>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
