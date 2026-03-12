@@ -4,16 +4,13 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@bufbuild/protobuf': 1.10.0
-
 importers:
 
   .:
     dependencies:
       '@arcjet/next':
         specifier: 1.0.0-beta.3
-        version: 1.0.0-beta.3(@bufbuild/protobuf@1.10.0)(next@15.1.11(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
+        version: 1.0.0-beta.3(@bufbuild/protobuf@2.11.0)(next@15.1.11(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
       '@auth/prisma-adapter':
         specifier: ^2.11.1
         version: 2.11.1(@prisma/client@7.5.0(prisma@7.5.0(@types/react@19.0.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.9.3))(typescript@5.9.3))
@@ -258,6 +255,9 @@ packages:
   '@bufbuild/protobuf@1.10.0':
     resolution: {integrity: sha512-QDdVFLoN93Zjg36NoQPZfsVH9tZew7wKDKyV5qRdj8ntT4wQCOradQjRaTdwMhWUYsgKsvCINKKm87FdEk96Ag==}
 
+  '@bufbuild/protobuf@2.11.0':
+    resolution: {integrity: sha512-sBXGT13cpmPR5BMgHE6UEEfEaShh5Ror6rfN3yEK5si7QVrtZg8LEPQb0VVhiLRUslD2yLnXtnRzG035J/mZXQ==}
+
   '@chevrotain/cst-dts-gen@10.5.0':
     resolution: {integrity: sha512-lhmC/FyqQ2o7pGK4Om+hzuDrm9rhFYIJ/AXoQBeongmn870Xeb0L6oGEiuR8nohFNL5sMaQEJWCxr1oIVIVXrw==}
 
@@ -274,19 +274,19 @@ packages:
     resolution: {integrity: sha512-DxcD1wsF/aX9GegjAtl7VbpiZNjVJozy87VbaFoN6AF0Ln1Q757r5dgV59Gz0wmlk5f17txUsrEr1f2inlnnAg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
-      '@bufbuild/protobuf': 1.10.0
+      '@bufbuild/protobuf': ^1.10.0
       '@connectrpc/connect': 1.6.1
 
   '@connectrpc/connect-web@1.6.1':
     resolution: {integrity: sha512-GVfxQOmt3TtgTaKeXLS/EA2IHa3nHxwe2BCHT7X0Q/0hohM+nP5DDnIItGEjGrGdt3LTTqWqE4s70N4h+qIMlQ==}
     peerDependencies:
-      '@bufbuild/protobuf': 1.10.0
+      '@bufbuild/protobuf': ^1.10.0
       '@connectrpc/connect': 1.6.1
 
   '@connectrpc/connect@1.6.1':
     resolution: {integrity: sha512-KchMDNtU4CDTdkyf0qG7ugJ6qHTOR/aI7XebYn3OTCNagaDYWiZUVKgRgwH79yeMkpNgvEUaXSK7wKjaBK9b/Q==}
     peerDependencies:
-      '@bufbuild/protobuf': 1.10.0
+      '@bufbuild/protobuf': ^1.10.0
 
   '@effect/platform@0.72.0':
     resolution: {integrity: sha512-uHsW2hlo6AiIW3zpLAVAoNvJngS/JwCZBAM4RSRllm8JTgjjCraef78FJBDNnSXz+2a10Xzzx4qxVsP3s8EV5Q==}
@@ -4140,14 +4140,14 @@ snapshots:
     dependencies:
       '@arcjet/sprintf': 1.0.0-beta.3
 
-  '@arcjet/next@1.0.0-beta.3(@bufbuild/protobuf@1.10.0)(next@15.1.11(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))':
+  '@arcjet/next@1.0.0-beta.3(@bufbuild/protobuf@2.11.0)(next@15.1.11(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))':
     dependencies:
       '@arcjet/env': 1.0.0-beta.3
       '@arcjet/headers': 1.0.0-beta.3
       '@arcjet/ip': 1.0.0-beta.3
       '@arcjet/logger': 1.0.0-beta.3
       '@arcjet/protocol': 1.0.0-beta.3
-      '@arcjet/transport': 1.0.0-beta.3(@bufbuild/protobuf@1.10.0)
+      '@arcjet/transport': 1.0.0-beta.3(@bufbuild/protobuf@2.11.0)
       arcjet: 1.0.0-beta.3
       next: 15.1.11(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
     transitivePeerDependencies:
@@ -4163,11 +4163,11 @@ snapshots:
 
   '@arcjet/sprintf@1.0.0-beta.3': {}
 
-  '@arcjet/transport@1.0.0-beta.3(@bufbuild/protobuf@1.10.0)':
+  '@arcjet/transport@1.0.0-beta.3(@bufbuild/protobuf@2.11.0)':
     dependencies:
-      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@1.10.0)
-      '@connectrpc/connect-node': 1.6.1(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.0))
-      '@connectrpc/connect-web': 1.6.1(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.0))
+      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@2.11.0)
+      '@connectrpc/connect-node': 1.6.1(@bufbuild/protobuf@2.11.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@2.11.0))
+      '@connectrpc/connect-web': 1.6.1(@bufbuild/protobuf@2.11.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@2.11.0))
     transitivePeerDependencies:
       - '@bufbuild/protobuf'
 
@@ -4200,6 +4200,8 @@ snapshots:
 
   '@bufbuild/protobuf@1.10.0': {}
 
+  '@bufbuild/protobuf@2.11.0': {}
+
   '@chevrotain/cst-dts-gen@10.5.0':
     dependencies:
       '@chevrotain/gast': 10.5.0
@@ -4215,20 +4217,24 @@ snapshots:
 
   '@chevrotain/utils@10.5.0': {}
 
-  '@connectrpc/connect-node@1.6.1(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.0))':
+  '@connectrpc/connect-node@1.6.1(@bufbuild/protobuf@2.11.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@2.11.0))':
     dependencies:
-      '@bufbuild/protobuf': 1.10.0
-      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@1.10.0)
+      '@bufbuild/protobuf': 2.11.0
+      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@2.11.0)
       undici: 5.28.5
 
-  '@connectrpc/connect-web@1.6.1(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.0))':
+  '@connectrpc/connect-web@1.6.1(@bufbuild/protobuf@2.11.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@2.11.0))':
     dependencies:
-      '@bufbuild/protobuf': 1.10.0
-      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@1.10.0)
+      '@bufbuild/protobuf': 2.11.0
+      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@2.11.0)
 
   '@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.0)':
     dependencies:
       '@bufbuild/protobuf': 1.10.0
+
+  '@connectrpc/connect@1.6.1(@bufbuild/protobuf@2.11.0)':
+    dependencies:
+      '@bufbuild/protobuf': 2.11.0
 
   '@effect/platform@0.72.0(effect@3.12.0)':
     dependencies:
@@ -7135,7 +7141,7 @@ snapshots:
 
   inngest@3.52.6(@opentelemetry/core@2.6.0(@opentelemetry/api@1.9.0))(hono@4.11.4)(next@15.1.11(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(typescript@5.9.3)(zod@4.3.6):
     dependencies:
-      '@bufbuild/protobuf': 1.10.0
+      '@bufbuild/protobuf': 2.11.0
       '@inngest/ai': 0.1.3
       '@jpwilliams/waitgroup': 2.1.1
       '@opentelemetry/api': 1.9.0
