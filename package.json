@@ -65,8 +65,11 @@
     "typescript": "^5.9.3"
   },
   "pnpm": {
-    "overrides": {
-      "@bufbuild/protobuf": "1.10.0"
-    }
+    "onlyBuiltDependencies": [
+      "@prisma/engines",
+      "prisma",
+      "protobufjs",
+      "sharp"
+    ]
   }
 }
